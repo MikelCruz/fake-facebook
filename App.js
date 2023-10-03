@@ -11,6 +11,10 @@ import Profile from './screens/Profile'
 import Notifications from './screens/Notifications'
 import Menu from './screens/Menu'
 
+import { NavigationContainer } from '@react-navigation/native';
+import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
+
+import {MaterialCommunityIcons} from '@expo/vector-icons'
 
 const App = () => {
   return (
