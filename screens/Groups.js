@@ -7,7 +7,7 @@ const View = styled.View`
     height: 500px;
 `
 
-const Group = () => {
+const Groups = () => {
     return (
         <View>
             <Text> Group Screen </Text>
@@ -15,4 +15,4 @@ const Group = () => {
     )
 }
 
-export default Group
+export default Groups
