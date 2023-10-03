@@ -18,6 +18,33 @@ import {MaterialCommunityIcons} from '@expo/vector-icons'
 
 const Tab = createMaterialTopTabNavigator();
 
+<NavigationContainer>
+  <Tab.Navigator
+    swipeEnable='true'
+    tabBarOptions={{
+      showIcon: true,
+      showLabel: false,
+      activeTintColor: '#3a86e9',
+      inactiveTintColor: '#9F9F9F',
+    }}
+    screenOptions={({ route }) => ({
+      tabBarIcon: ({ focused, color, size }) =>{
+      let iconName;ç
+      if(route.name === 'Home') iconName = 'home'
+      else if (route.name === 'Friends') iconName = 'account-multiple-outline'
+      else if (route.name === 'Groups') iconName = 'account-group'
+      else if (route.name === 'Profile') iconName = 'account-circle-outline'
+      else if (route.name === 'Notifications') iconName = 'bell-outline'
+      else if (route.name === 'Menu?') iconName = 'menu'
+      return <MaterialCommunityIcons name={iconName} size={26} color={color} />;
+    },
+    })}
+    >
+  </Tab.Navigator>
+</NavigationContainer>
+
+
+
 const App = () => {
   return (
     <>
