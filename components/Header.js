@@ -3,6 +3,7 @@ import { MaterialCommunityIcons } from '@expo/vector-icons'
 import styled from 'styled-components/native'
 
 const Container = styled.View`
+    margin-top:         45px;
     width:              100%;
     heihgt:             58px;
     padding:            0 11px;
