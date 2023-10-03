@@ -1,16 +1,23 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import 'react-native-gesture-handler'
+import { ScrollView } from 'react-native-gesture-handler';
 
 
-export default function App() {
+const App = () => {
   return (
-    <View style={styles.container}>
-      <Text> Fake Fcebook! </Text>
-      <StatusBar style="auto" />
-    </View>
+    <>
+    <StatusBar
+      backgroundColor="#FFFFFF"
+      barStyle="dark-content"
+    />
+    <ScrollView></ScrollView>
+    </>
   );
 }
+
+export default App
+
 
 const styles = StyleSheet.create({
   container: {
