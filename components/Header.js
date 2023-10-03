@@ -31,3 +31,21 @@ const Button = styled.TouchableOpacity`
     align-items:        center;
     justify-content:    center;
 `
+
+
+const Header = () => {
+    return (
+        <Container>
+            <Text>facebook</Text>
+            <Row>
+                <Button>
+                    <MaterialCommunityIcons name ='magnify' size={26} color='black' />
+                </Button>
+                <Button>
+                    <MaterialCommunityIcons name ='facebook-messenger' size={26} color='black' />
+                </Button>
+            </Row>
+        </Container>
+    )
+}
+export default Header
