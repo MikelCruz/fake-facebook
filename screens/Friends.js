@@ -15,4 +15,4 @@ const Friends = () => {
     )
 }
 
-export default Home
+export default Friends
