@@ -16,6 +16,8 @@ import { createMaterialTopTabNavigator } from '@react-navigation/material-top-ta
 
 import {MaterialCommunityIcons} from '@expo/vector-icons'
 
+const Tab = createMaterialTopTabNavigator();
+
 const App = () => {
   return (
     <>
