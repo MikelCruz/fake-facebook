@@ -1,11 +1,11 @@
 import React from 'react'
 import styled from 'styled-components/native'
-import {MaterialCommunityICons} from '@expo/vector-icons'
+import {MaterialCommunityIcons} from '@expo/vector-icons'
 import Avatar from './Avatar'
 
 const Container = styled.View`
     width:              100%;
-    heihgt:             92px;
+    height:             92px;
 `
 
 const Row = styled.View`
@@ -17,7 +17,7 @@ const Row = styled.View`
 `
 
 const Input = styled.TextInput`
-    heihgt:             40px;
+    height:             40px;
     width:              85%;
     padding:            0 8px;
     border:             1px solid #DDD;
@@ -27,7 +27,7 @@ const Input = styled.TextInput`
 
 const Divider = styled.View`
     width:              100%;
-    heihgt:             0.5px;
+    height:             0.5px;
     background:         #DDDDDD;
 `
 
@@ -57,23 +57,23 @@ const ToolBar = () => {
     return (
         <Container>
             <Row>
-                <Avatar source = {require('.../assets/12.jpg')} />
+                <Avatar source = {require('../assets/12.jpg')} />
                 <Input placeholder = "¿Qué estás pensando?" />
             </Row>
             <Divider />
             <Row>
                 <Menu>
-                    <MaterialCommunityICons name = "video-account" size={28} color ="#F44337" />
+                    <MaterialCommunityIcons name = "video-account" size={20} color ="#F44337" />
                     <MenuText> Directo </MenuText>
                 </Menu>
                 <Separator />
                 <Menu>
-                    <MaterialCommunityICons name = "image-multiple" size={20} color = "#CAF50" />
+                    <MaterialCommunityIcons name = "image-multiple" size={20} color = "#4CAF50" />
                     <MenuText> Foto </MenuText>
                 </Menu>
                 <Separator />
                 <Menu>
-                    <MaterialCommunityICons name="video-plus" size={20} color="#A748EE" />
+                    <MaterialCommunityIcons name="video-plus" size={20} color="#A748EE" />
                     <MenuText> Sala </MenuText>
                 </Menu>
             </Row>

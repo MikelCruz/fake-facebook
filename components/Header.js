@@ -5,7 +5,7 @@ import styled from 'styled-components/native'
 const Container = styled.View`
     margin-top:         45px;
     width:              100%;
-    heihgt:             58px;
+    height:             58px;
     padding:            0 11px;
     align-items:        center;
     flex-direction:     row;
@@ -25,7 +25,7 @@ const Row = styled.View`
 
 const Button = styled.TouchableOpacity`
     width:              42px;
-    heihgt:             42px;
+    height:             42px;
     border-radius:      21px;
     margin-left:        16px;
     background:         #EEEEEE;

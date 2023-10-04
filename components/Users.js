@@ -7,7 +7,7 @@ import fakeUsers from '../data/fakedata.js'
 
 
 const Container = styled.View`
-    widht:              100%;
+    width:              100%;
     height:             60px;
     flex-direction:     row;
     align-items:        center;
@@ -42,7 +42,7 @@ const Users = () => {
                 horizontal
                 showsHorizontalScrollIndicator={false}
                 style={{paddingLeft: 12}}
-                >
+            >
             <Room>
                 <MaterialCommunityIcons name="video-plus" size={26} color = "#A748EE" />
                 <Text>Crear sala</Text>

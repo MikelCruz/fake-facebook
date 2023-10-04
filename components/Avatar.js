@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-import styled from "styled-components/native";
+import styled from 'styled-components/native';
 
 const Container = styled.View`
     width:              40px;
@@ -29,7 +29,7 @@ const Avatar = ({source, online}) => {
     return(
         <Container>
             <ProfileImage source = {source} />
-            {online && <USerActive />}
+            {online && <UserActive />}
         </Container>
     )
 }
