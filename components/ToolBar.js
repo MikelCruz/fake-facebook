@@ -18,7 +18,7 @@ const Row = styled.View`
 
 const Input = styled.TextInput`
     heihgt:             40px;
-    width:              850%;
+    width:              85%;
     padding:            0 8px;
     border:             1px solid #DDD;
     margin:             10px;
@@ -26,8 +26,8 @@ const Input = styled.TextInput`
 `
 
 const Divider = styled.View`
-    heihgt:             40px;
     width:              100%;
+    heihgt:             0.5px;
     background:         #DDDDDD;
 `
 
@@ -35,6 +35,7 @@ const Menu = styled.View`
     flex:               1;
     flex-direction:     row;
     align-items:        center;
+    justify-content:    center;
     height:             42px;
 `
 
