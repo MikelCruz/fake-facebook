@@ -35,3 +35,29 @@ const User = styled.View`
     margin-right: 12px;
 `
 
+const Users = () => {
+    return (
+        <Container>
+            <ScrollView
+                horizontal
+                showsHorizontalScrollIndicator={false}
+                style={{paddingLeft: 12}}
+                >
+            <Room>
+                <MaterialCommunityIcons name="video-plus" size={26} color = "#A748EE" />
+                <Text>Crear sala</Text>
+            </Room>
+
+            {fakeUsers.map((elem,i) => {
+                return(
+                    <User key={i.toString()}>
+                        <Avatar source={elem.source} online = {elem.online} />
+                    </User>
+                )
+            })}
+            </ScrollView>
+        </Container>
+    )
+}
+
+export default Users
