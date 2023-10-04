@@ -14,13 +14,13 @@ const ProfileImage = styled.Image`
     border-radius:      20px;
 `
 
-const Avatar = ({source}) => {
+const Avatar = ({source, online}) => {
     return(
         <Container>
-            <ProfileImage source={source} />
+            <ProfileImage source = {source} />
+            {online && <USerActive />}
         </Container>
     )
-
 }
 
 export default Avatar
