@@ -13,6 +13,7 @@ const Home = () => {
     return (
         <View>
             <ToolBar />
+            <MainSeparator />
             <Users />
             <MainSeparator />
             
