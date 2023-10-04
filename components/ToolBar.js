@@ -51,3 +51,35 @@ const Separator = styled.View`
     height:             26px;
     background:         #F0F0F0;
 `
+
+
+const ToolBar = () => {
+    return (
+        <Container>
+            <Row>
+                <Avatar source={require('.../assets/12.jpg')} />
+                <Input placeholder="¿Qué estás pensando?" />
+            </Row>
+            <Divider />
+            <Row>
+                <Menu>
+                    <MaterialCommunityICons name = "video-account" size={28} color ="#F44337" />
+                    <MenuText> Directo </MenuText>
+                </Menu>
+                <Separator />
+                <Menu>
+                    <MaterialCommunityICons name = "image-multiple" size={20} color = "#CAF50" />
+                    <MenuText> Foto </MenuText>
+                </Menu>
+                <Separator />
+                <Menu>
+                    <MaterialCommunityICons name="video-plus" size={20} color="#A748EE" />
+                    <MenuText> Sala </MenuText>
+                </Menu>
+            </Row>
+        </Container>
+    )
+}
+
+
+export default ToolBar
