@@ -5,7 +5,7 @@ import Animated from 'react-native'
 import { MaterialCommunityIcons } from '@expo/vector-icons'
 import fakeStories from '../data/fakeStories'
 import Avatar from './Avatar'
-// import * as Animations from '../animations/stoyAnimations'
+import * as Animations from '../animations/stoyAnimations'
 
 const Container = styled.View`
     width:                          100%;
