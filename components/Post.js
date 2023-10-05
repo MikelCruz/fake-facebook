@@ -3,7 +3,7 @@ import { View } from "react-native";
 import styled from 'styled-components/native';
 import Avatar from './Avatar'
 import { MaterialCommunityIcons } from '@expo/vector-icons'
-import fakeUsers from '../data/fakeUsers'
+import fakeUsers from '../data/fakedata'
 import MainSeparator from '../components/MainSeparator'
 
 const Container = styled.View`
@@ -11,7 +11,7 @@ const Container = styled.View`
 `
 
 const Header = styled.View`
-    flex.direction:         row;
+    flex-direction:         row;
     align-items:            center;
     justify-content:        space-between;
     height:                 50px;
@@ -36,7 +36,7 @@ const Time = styled.Text`
 `
 
 const PostContent = styled.Text`
-    font-size;              12px;
+    font-size:              12px;
     color:                  #222121;
     line-height:            16px;
     padding:                0 11px;
@@ -104,6 +104,57 @@ const Post = () => {
         {fakeUsers.map((user, i) => {
             return (
                 <Container key={i.toString()}> 
+                   
+                    <Header>
+                    <Row>
+                        <Avatar source={user.source} />
+                        <View style={{paddingLeft: 10}}>
+                            <User> {user.name}</User>
+                            <Row>
+                                <Time>{user.time}</Time>
+                                <MaterialCommunityIcons name='circle-small' size={12} color='#747476' />
+                                <MaterialCommunityIcons name='earth' size={10} color='#747476'/>
+                            </Row>
+                        </View>
+                    </Row>
+                    <MaterialCommunityIcons name='dots-horizontal' size={20} color='#747476'/>
+                    </Header>
+
+                    <PostContent>{user.postContent}</PostContent>
+                    <Photo source={user.postImage} />
+
+                    <Footer>
+                        <FooterCount>
+                            <Row>
+                                <IconCount>
+                                    <MaterialCommunityIcons name='thumb-up-outline' size={12} color={'#FFFFFF'} />
+                                </IconCount>    
+                                <TextCount>{user.likes}</TextCount>    
+                            </Row>
+                            <TextCount>{user.comments}</TextCount>   
+                        </FooterCount>
+                        <Separator />
+                        <FooterMenu>
+                            <Button>
+                                <Icon>
+                                    <MaterialCommunityIcons name='thumb-up-outline' size={20} color='#424040'/>
+                                </Icon>
+                                <Text>Me Gusta</Text>
+                            </Button>
+                            <Button>
+                                <Icon>
+                                    <MaterialCommunityIcons name='comment-outline' size={20} color='#424040'/>
+                                </Icon>
+                                <Text>Comentar</Text>
+                            </Button>
+                            <Button>
+                                <Icon>
+                                    <MaterialCommunityIcons name='share-outline' size={20} color='#424040'/>
+                                </Icon>
+                                <Text>Compartir</Text>
+                            </Button>
+                        </FooterMenu>
+                    </Footer>
                 </Container>
             )
         })}
