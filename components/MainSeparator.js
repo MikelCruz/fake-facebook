@@ -4,7 +4,7 @@ import styled from 'styled-components/native'
 const Separator = styled.View`
     width:          100%;
     height:         10px;
-    background:     #BDBDBD;
+    background:     #ffffff;
     margin:         12px 0 0 0;
 `
 
