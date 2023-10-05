@@ -1,17 +1,36 @@
 import React from 'react'
 import { ScrollView } from 'react-native'
 import styled from 'styled-components/native'
-import Animated from 'react-native-reanimated'
+import Animated from 'react-native'
 import { MaterialCommunityIcons } from '@expo/vector-icons'
 import fakeStories from '../data/fakeStories'
 import Avatar from './Avatar'
-import * as Animations from '../animations/storyAnimations'
+// import * as Animations from '../animations/storyAnimations'
 
 const Container = styled.View`
     width:                          100%;
     height:                         230px;
     flex-direction:                 row;
     align-items:                    center;
+    background:                     #FFFFFF;
+`
+
+const FakeCard = styled.View`
+    width:                          110px;
+    height:                         200px;
+    margin-left:                    10px;
+    background:                     #FFFFFF;
+`
+
+const PersonaldCard = styled.View`
+    width:                          110px;
+    height:                         200px;
+    margin-right:                   0px;
+    position:                       absolute;
+    background:                     #FFFFFF;
+    border-radius:                  10px;
+    z-index:                        10;
+    border:                         1px solid #DDDDDD;
 `
 
 const UserCard = styled.View`
