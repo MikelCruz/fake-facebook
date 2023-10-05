@@ -26,7 +26,9 @@ const App = () => {
       backgroundColor="#FFFFFF"
       barStyle="dark-content"
     />
+    {/* Aqui habria un scrollview */}
       <Header />
+      {/* Aqui deberia de estar el que cierra */}
         <NavigationContainer>
             <Tab.Navigator
               tabBarOptions={{
