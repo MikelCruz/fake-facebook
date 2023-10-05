@@ -1,4 +1,4 @@
-import Animated from "react-native";
+import Animated from 'react-native';
 export const scroll_x = new Animated.Value(0)
 
 export const cardTop = scroll_x.interpolate({

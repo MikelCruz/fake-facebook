@@ -5,7 +5,7 @@ import Animated from 'react-native'
 import { MaterialCommunityIcons } from '@expo/vector-icons'
 import fakeStories from '../data/fakeStories'
 import Avatar from './Avatar'
-// import * as Animations from '../animations/storyAnimations'
+// import * as Animations from '../animations/stoyAnimations'
 
 const Container = styled.View`
     width:                          100%;
@@ -31,6 +31,17 @@ const PersonaldCard = styled.Image`
     border-radius:                  10px;
     z-index:                        10;
     border:                         1px solid #DDDDDD;
+`
+
+const PersonaldCardStory = styled.Image`
+    width:                          100%;
+    heihgt:                         130px;
+    border-radius:                  10px;
+    border-bottom-left-radius:      0;
+    border-bottom-right-radius:     0;
+    position:                       absolute;
+    top:                            0px;
+    left:                           0px;
 `
 
 const PersonaldCardIcon = styled.View`
@@ -100,42 +111,63 @@ const Text = styled.Text`
     color:                          ${(props => props.profile ? '#000000' : '#FFFFFF')}
 `
 
+// const Story = () => {
+//     return (
+//         <>
+//             <Container>
+//                 <ScrollView
+//                     horizontal
+//                     showsHorizontalScrollIndicator={false}
+//                     style={{paddingLeft:10}}
+//                 >
+//                 <UserCard>
+//                     <UserCardStory source={require('../assets/story.jpg')} />
+//                     <UserCardFooter profile={true}>
+//                         <Text profile={true}>Crear una historia</Text>
+//                     </UserCardFooter>
+//                     <UserCardPlus>
+//                         <MaterialCommunityIcons name="plus" size={28} color="#FFFFFF" />
+//                     </UserCardPlus> 
+//                 </UserCard>
+//                 {fakeStories.map((story, i) => {
+//                     return (
+//                         <UserCard key={i.toString()}>
+//                             <UserCardStory source={story.source} />
+//                             <UserCardFooter profile={false}>
+//                                 <Text profile={false}>{story.name}</Text>
+//                             </UserCardFooter>
+//                             <UserOnCard>
+//                                 <Avatar
+//                                     source={story.user}
+//                                     story={true}
+//                                     checked={story.checked}
+//                                     />
+//                             </UserOnCard>
+//                         </UserCard>
+//                     )
+//                 })}
+//                 </ScrollView>
+//             </Container>
+//         </>
+//     )
+// }
+
 const Story = () => {
     return (
         <>
             <Container>
-                <ScrollView
-                    horizontal
-                    showsHorizontalScrollIndicator={false}
-                    style={{paddingLeft:10}}
-                >
-                <UserCard>
-                    <UserCardStory source={require('../assets/story.jpg')} />
-                    <UserCardFooter profile={true}>
-                        <Text profile={true}>Crear una historia</Text>
-                    </UserCardFooter>
-                    <UserCardPlus>
-                        <MaterialCommunityIcons name="plus" size={28} color="#FFFFFF" />
-                    </UserCardPlus> 
-                </UserCard>
-                {fakeStories.map((story, i) => {
-                    return (
-                        <UserCard key={i.toString()}>
-                            <UserCardStory source={story.source} />
-                            <UserCardFooter profile={false}>
-                                <Text profile={false}>{story.name}</Text>
-                            </UserCardFooter>
-                            <UserOnCard>
-                                <Avatar
-                                    source={story.user}
-                                    story={true}
-                                    checked={story.checked}
-                                    />
-                            </UserOnCard>
-                        </UserCard>
-                    )
-                })}
-                </ScrollView>
+                <PersonaldCard as={Animated.View} style={{
+                    top:                        Animations.cardTop,
+                    left:                       Animations.cardLeft,
+                    height:                     Animations.cardHeight,
+                    borderRadius:               Animations.cardRadius,
+                    borderBottomLeftRadius:     Animations.cardLeftRadius,
+                    borderTopLeftRadius:        Animations.cardLeftRadius
+                }}>
+                    <PersonaldCardStory as={Animated.Image}
+                    
+                    />
+                </PersonaldCard>
             </Container>
         </>
     )
