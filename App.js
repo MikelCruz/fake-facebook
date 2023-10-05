@@ -26,12 +26,11 @@ const App = () => {
       backgroundColor="#FFFFFF"
       barStyle="dark-content"
     />
-    <ScrollView>
       <Header />
         <NavigationContainer>
             <Tab.Navigator
-              swipeEnabled='true'
               tabBarOptions={{
+                swipeEnabled: 'true',
                 showIcon: true,
                 showLabel: false,
                 activeTintColor: '#3a86e9',
@@ -58,7 +57,7 @@ const App = () => {
                 <Tab.Screen name = "Menu"           component={Menu} />
             </Tab.Navigator>
         </NavigationContainer>
-    </ScrollView>
+
     </>
   );
 }
