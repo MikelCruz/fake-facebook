@@ -194,9 +194,36 @@ const Story = () => {
                     </PersonaldCardIcon>
                 </PersonaldCard>
 
-
-
-
+                <Animated.ScrollView
+                    horizontal
+                    showsHorizontalScrollIndicator={false}
+                    style={{paddingLeft: 10, flexDirection: 'row'}}
+                    scrollEventThrottle={5}
+                    onScroll={Animated.event([
+                        {
+                            nativeEvent: { contentOffset: { x: Animations.scroll_x } }
+                        }
+                    ])}
+                >
+                    <FakeCard />
+                    {fakeStories.map((story, i) => {
+                        return  (
+                            <UserCard key={i.toString()}>
+                                <UserCardStory source={story.source} />
+                                <UserCardFooter profile={false}>
+                                    <Text profile={false}>{story.name}</Text>
+                                </UserCardFooter>
+                                <UserOnCard>
+                                <Avatar
+                                    source={story.user}
+                                    story={true}
+                                    checked={story.checked}
+                                />
+                                </UserOnCard>
+                            </UserCard>
+                        )
+                    })}
+                </Animated.ScrollView>
             </Container>
         </>
     )
