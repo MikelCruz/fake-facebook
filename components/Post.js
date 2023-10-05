@@ -98,3 +98,17 @@ const Text = styled.Text`
 `
 
 
+const Post = () => {
+    return (
+        <>
+        {fakeUsers.map((user, i) => {
+            return (
+                <Container key={i.toString()}> 
+                </Container>
+            )
+        })}
+        </>
+    )
+}
+
+export default Post
