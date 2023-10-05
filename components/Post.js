@@ -45,7 +45,7 @@ const PostContent = styled.Text`
 const Photo = styled.Image`
     margin-top:             9px;
     width:                  100%; 
-    heihgt:                 300px;
+    height:                 300px;
 `
 
 const Footer = styled.View`
@@ -61,7 +61,7 @@ const FooterCount = styled.View`
 const IconCount = styled.View`
     background:             #1878f3;
     width:                  20px;
-    heihgt:                 20px;
+    height:                 20px;
     border-radius:          10px;
     align-items:            center;
     margin-right:           6px;
@@ -155,6 +155,7 @@ const Post = () => {
                             </Button>
                         </FooterMenu>
                     </Footer>
+                    <MainSeparator/>
                 </Container>
             )
         })}
