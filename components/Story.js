@@ -22,7 +22,7 @@ const FakeCard = styled.View`
     background:                     #FFFFFF;
 `
 
-const PersonaldCard = styled.View`
+const PersonaldCard = styled.Image`
     width:                          110px;
     height:                         200px;
     margin-right:                   0px;
@@ -31,6 +31,19 @@ const PersonaldCard = styled.View`
     border-radius:                  10px;
     z-index:                        10;
     border:                         1px solid #DDDDDD;
+`
+
+const PersonaldCardIcon = styled.View`
+    width:                          34px;
+    height:                         34px;
+    border-radius:                  17px;
+    background:                     #3a86e9;
+    border-width:                   3px;
+    border-color:                   #FFFFFF
+    align-items:                    center;
+    position:                       absolute;
+    top:                            115px;
+    left:                           40px;
 `
 
 const UserCard = styled.View`
