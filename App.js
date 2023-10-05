@@ -57,7 +57,7 @@ const App = () => {
                 <Tab.Screen name = "Notifications"  component={Notifications} />
                 <Tab.Screen name = "Menu"           component={Menu} />
             </Tab.Navigator>
-          </NavigationContainer>
+        </NavigationContainer>
     </ScrollView>
     </>
   );
