@@ -1,9 +1,11 @@
 import React from 'react'
 import { ScrollView } from 'react-native'
 import styled from 'styled-components/native'
+import Animated from 'react-native-reanimated'
 import { MaterialCommunityIcons } from '@expo/vector-icons'
 import fakeStories from '../data/fakeStories'
 import Avatar from './Avatar'
+import * as Animations from '../animations/storyAnimations'
 
 const Container = styled.View`
     width:                          100%;
