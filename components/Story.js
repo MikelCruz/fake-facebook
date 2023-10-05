@@ -157,17 +157,46 @@ const Story = () => {
         <>
             <Container>
                 <PersonaldCard as={Animated.View} style={{
-                    top:                        Animations.cardTop,
-                    left:                       Animations.cardLeft,
-                    height:                     Animations.cardHeight,
-                    borderRadius:               Animations.cardRadius,
-                    borderBottomLeftRadius:     Animations.cardLeftRadius,
-                    borderTopLeftRadius:        Animations.cardLeftRadius
+                    top:                                Animations.cardTop,
+                    left:                               Animations.cardLeft,
+                    height:                             Animations.cardHeight,
+                    borderRadius:                       Animations.cardRadius,
+                    borderBottomLeftRadius:             Animations.cardLeftRadius,
+                    borderTopLeftRadius:                Animations.cardLeftRadius
                 }}>
                     <PersonaldCardStory as={Animated.Image}
-                    
+                        source={require('../assets/story.jpg')}
+                        style={{
+                            top:                        Animations.imageTop,
+                            left:                       Animations.imageLeft,
+                            width:                      Animations.imageWidth,
+                            height:                     Animations.imageHeight,
+                            marginRight:                Animations.ImageMargin,
+                            marginTop:                  Animations.imageMargin,
+                            borderRadius:               Animations.imageRadius,
+                            borderBottomLeftRadius:     Animations.imageBottomRadius,
+                            borderBottomRightRadius:    Animations.imageBottomRadius
+                        }}
                     />
+                        <Text as={Animated.Text}
+                            profile={true}
+                            style={{
+                                opacity:                    Animations.textOpacity,
+                                scale:                      Animations.textScale
+                            }}
+                        >Crear Una historia  </Text>
+                    <PersonaldCardIcon as={Animated.View} style={{
+                        transform:                      [{scale: Animations.iconScale}],
+                        top:                            Animations.iconTop,
+                        left:                           Animations.iconLeft
+                    }}>
+                    <MaterialCommunityIcons name = "plus" size={28} color ="#FFFFFF" />
+                </PersonaldCardIcon>
                 </PersonaldCard>
+
+
+
+                
             </Container>
         </>
     )
