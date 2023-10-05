@@ -76,9 +76,6 @@ const UserCardFooter = styled.View`
     height:                         35%;
     top:                            130px;
     left:                           0px;
-    border:                         ${(props => props.profile ? '1px solid #DDDDDD' : 0)};
-    border-bottom-right-radius:     10px;
-    border-bottom-left-radius:      10px;
     background:                     ${(props =>  props.profile ? '#FFFFFF' : 'rgba(255, 255, 255, 0)')};
 `
 
