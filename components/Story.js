@@ -189,14 +189,14 @@ const Story = () => {
                         transform:                      [{scale: Animations.iconScale}],
                         top:                            Animations.iconTop,
                         left:                           Animations.iconLeft
-                    }}>
-                    <MaterialCommunityIcons name = "plus" size={28} color ="#FFFFFF" />
-                </PersonaldCardIcon>
+                        }}>
+                        <MaterialCommunityIcons name = "plus" size={28} color ="#FFFFFF" />
+                    </PersonaldCardIcon>
                 </PersonaldCard>
 
 
 
-                
+
             </Container>
         </>
     )
