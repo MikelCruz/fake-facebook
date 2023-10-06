@@ -42,15 +42,20 @@ const PostContent = styled.Text`
 `
 
 const Photo = styled.Image`
+    position:               absolute;
     margin-top:             9px;
     width:                  100%; 
     height:                 300px;
+    z-index:                -1
 `
 
 const ProfilePicture = styled.Image`
+    position:               absolute;
     margin-top:             9px;
-    width:                  100%; 
-    height:                 300px;
+    margin-left:            100px;;
+    width:                  50%; 
+    height:                 200px;
+    z-index:                1;
 `
 
 
