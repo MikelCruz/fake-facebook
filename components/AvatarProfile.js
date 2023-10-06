@@ -15,7 +15,7 @@ const ProfilePicture = styled.Image`
     height:                 200px;
     z-index:                1;
     border-radius:          100%;
-    border:                 2px solid #FFFFFF;
+    border:                 4px solid #DDDDDD;
 `
 
 const UserActive = styled.View`
