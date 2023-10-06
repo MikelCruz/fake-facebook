@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components/native'
 import {MaterialCommunityIcons} from '@expo/vector-icons'
-import AvatarState from './AvatarState'
+import AvatarIcons from './AvatarIcons'
 
 
 const Container = styled.View`
@@ -46,20 +46,20 @@ const Actions = () => {
         <Container>
                 <Row>
                     <Menu>
-                        <AvatarState source={require('../assets/feels_song.png')} />
+                        <AvatarIcons source={require('../assets/plus.png')} />
                         <Text>Add Story</Text>
                     </Menu>
 
                     <Menu>
-                        <AvatarState source={require('../assets/feels_song.png')} />
+                        <AvatarIcons source={require('../assets/format-list-bulleted.png')} />
                         <Text>Activity Log</Text>
                     </Menu>
                     <Menu>
-                        <AvatarState source={require('../assets/feels_song.png')} />
+                        <AvatarIcons source={require('../assets/square-edit-outline-icon.png')} />
                         <Text>Edit Profile</Text>
                     </Menu>
                     <Menu>
-                        <AvatarState source={require('../assets/feels_song.png')} />
+                        <AvatarIcons source={require('../assets/dots-horizontal-circle-outline.png')} />
                         <Text>Much More</Text>
                     </Menu>
                 </Row>
