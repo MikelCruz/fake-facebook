@@ -56,6 +56,8 @@ const ProfilePicture = styled.Image`
     width:                  50%; 
     height:                 200px;
     z-index:                1;
+    border-radius:          100%;
+    border-color:           red;
 `
 
 
