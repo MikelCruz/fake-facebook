@@ -52,14 +52,14 @@ const Menu2 = styled.View`
     margin-left:        50px;
 `
 //Para los iconos - PASAR A LIMPIO
-const Menu3 = styled.View`
-    flex:               1;
-    flex-direction:     column;
-    justify-content:    right;
-    height:             70px;
-    margin-top:         0px;
-    margin-left:        140px;
-`
+// const Menu3 = styled.View`
+//     flex:               1;
+//     flex-direction:     column;
+//     justify-content:    right;
+//     height:             70px;
+//     margin-top:         0px;
+//     margin-left:        140px;
+// `
 
 
 
@@ -74,9 +74,9 @@ const Estado = () => {
                         <Text > Feels </Text>
                         <Text2 > Lies of P </Text2> 
                     </Menu2>
-                    <Menu3>
+                    <Menu2>
                         <MaterialCommunityIcons name='dots-horizontal' size={30} color='#c2c2c2' />
-                    </Menu3>
+                    </Menu2>
                 </Row>
             <Divider />
             
