@@ -5,6 +5,7 @@ import Avatar from './Avatar'
 import { MaterialCommunityIcons } from '@expo/vector-icons'
 import fakeUsers from '../data/fakedata'
 import MainSeparator from '../components/MainSeparator'
+import Avatar2 from "./AvatarProfile";
 
 const Container = styled.View`
     flex:                   1;
@@ -57,7 +58,7 @@ const ProfilePicture = styled.Image`
     height:                 200px;
     z-index:                1;
     border-radius:          100%;
-    border-color:           red;
+    border:                 2px solid #FFFFFF;
 `
 
 
@@ -114,7 +115,8 @@ const ProfileContent = () => {
             <Container> 
                 <Header >
                     <Photo  source = {require('../assets/backgroundPfp.png')} />
-                    <ProfilePicture  source = {require('../assets/robloxPfp.png')} />
+                    {/* <ProfilePicture  source = {require('../assets/robloxPfp.png')} /> */}
+                    <Avatar2 source={require('../assets/robloxPfp.png')} online = {true} />
                 </Header>
                     
             </Container>
