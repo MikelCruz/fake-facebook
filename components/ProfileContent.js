@@ -123,7 +123,6 @@ const ProfileContent = () => {
                     <Avatar2 source={require('../assets/robloxPfp.png')} online = {true} />
                 </Header>
                 <Text> Jonathan Ramos</Text>
-                <Estado />
 
             </Container>
         </>

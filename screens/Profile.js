@@ -4,6 +4,7 @@ import styled from 'styled-components/native'
 import { ScrollView } from 'react-native'
 import UserBar from '../components/UserBar'
 import ProfileContent from '../components/ProfileContent'
+import Estado from '../components/EstadoProfile'
 
 const View = styled.View`
     align-items: center;
@@ -12,13 +13,11 @@ const View = styled.View`
 
 const Profile = () => {
     return (
-        <View>
-            <ScrollView>
-                {/* <Text> En Proceso </Text> */}
-                <UserBar />
-                <ProfileContent />
-            </ScrollView>
-        </View>
+        <ScrollView>
+            <UserBar />
+            <ProfileContent />
+            <Estado />
+        </ScrollView>
     )
 }
 
