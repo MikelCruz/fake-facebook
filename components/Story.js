@@ -1,7 +1,7 @@
 import React from 'react'
 import { ScrollView } from 'react-native'
 import styled from 'styled-components/native'
-import Animated from 'react-native'
+import { View, Animated } from "react-native";
 import { MaterialCommunityIcons } from '@expo/vector-icons'
 import fakeStories from '../data/fakeStories'
 import Avatar from './Avatar'
@@ -22,7 +22,7 @@ const FakeCard = styled.View`
     background:                     #FFFFFF;
 `
 
-const PersonaldCard = styled.Image`
+const PersonaldCard = styled.View`
     width:                          110px;
     height:                         200px;
     margin-right:                   0px;
@@ -35,7 +35,7 @@ const PersonaldCard = styled.Image`
 
 const PersonaldCardStory = styled.Image`
     width:                          100%;
-    heihgt:                         130px;
+    height:                         130px;
     border-radius:                  10px;
     border-bottom-left-radius:      0;
     border-bottom-right-radius:     0;
@@ -108,7 +108,7 @@ const Text = styled.Text`
     margin:                         0 10px;
     padding-top:                    ${(props => props.profile ? '155px' : '45px')};
     text-align:                     center;
-    color:                          ${(props => props.profile ? '#000000' : '#FFFFFF')}
+    color:                          ${(props => props.profile ? '#000000' : '#FFFFFF')};
 `
 
 // const Story = () => {
@@ -171,7 +171,7 @@ const Story = () => {
                             left:                       Animations.imageLeft,
                             width:                      Animations.imageWidth,
                             height:                     Animations.imageHeight,
-                            marginRight:                Animations.ImageMargin,
+                            marginRight:                Animations.imageMargin,
                             marginTop:                  Animations.imageMargin,
                             borderRadius:               Animations.imageRadius,
                             borderBottomLeftRadius:     Animations.imageBottomRadius,
