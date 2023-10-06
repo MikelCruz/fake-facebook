@@ -6,6 +6,7 @@ import { MaterialCommunityIcons } from '@expo/vector-icons'
 import fakeUsers from '../data/fakedata'
 import MainSeparator from '../components/MainSeparator'
 import Avatar2 from "./AvatarProfile";
+import Estado from './EstadoProfile.js'
 
 const Container = styled.View`
     flex:                   1;
@@ -122,7 +123,9 @@ const ProfileContent = () => {
                     <Avatar2 source={require('../assets/robloxPfp.png')} online = {true} />
                 </Header>
                 <Text> Jonathan Ramos</Text>
-                    
+                
+                <Estado />
+
             </Container>
         </>
     )
