@@ -104,8 +104,11 @@ const Icon = styled.View`
 `
 
 const Text = styled.Text`
-    font-Size:              12px;
-    color:                  #424040;
+    font-Size:              30px;
+    color:                  #000000;
+    margin-top:             170px;
+    margin-left:            110px;
+    
 `
 
 
@@ -118,6 +121,7 @@ const ProfileContent = () => {
                     {/* <ProfilePicture  source = {require('../assets/robloxPfp.png')} /> */}
                     <Avatar2 source={require('../assets/robloxPfp.png')} online = {true} />
                 </Header>
+                <Text> Jonathan Ramos</Text>
                     
             </Container>
         </>
